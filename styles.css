@@ -58,7 +58,8 @@
     padding:0.1rem;
  text-transform: uppercase;
  transform: rotate(90deg);
-    align-self:center;
+    align-self:start;
+    grid-column-start: 2;
 
 }
 
