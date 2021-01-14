@@ -1,0 +1,22 @@
+
+.main-container{
+    margin-left:10%;
+    margin-right:10%;
+    
+}
+
+.header-row{   
+    display:flex;
+    
+}
+
+.header-column{
+    padding: 2rem 2rem 2rem 2rem;
+    width:50%;
+}
+#left-heading{
+    font-size: 1.5rem;
+}
+#description{
+    width:75%;
+}
