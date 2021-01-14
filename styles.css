@@ -1,22 +1,59 @@
 
 .main-container{
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:15%;
+    margin-right:15%;
     
 }
 
 .header-row{   
-    display:flex;
-    
+    display:flex;    
 }
 
 .header-column{
     padding: 2rem 2rem 2rem 2rem;
     width:50%;
 }
+
 #left-heading{
     font-size: 1.5rem;
 }
+
 #description{
     width:75%;
 }
+
+.team-gallery{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap:wrap;
+}
+
+.team-image{
+   margin:1rem;
+   padding:0.5rem; 
+   width:28%;
+    
+}
+.team-image > .image-with-role{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    
+}
+
+.team-image > .image-with-role img{
+    flex-wrap: wrap;
+    height:90%;
+    width:75%;
+}
+
+.team-image > .image-with-role span{
+   transform:rotate(90deg);   
+   text-transform: uppercase;
+ 
+   
+  
+  
+   
+}
+
