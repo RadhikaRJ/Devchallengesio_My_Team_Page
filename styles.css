@@ -20,7 +20,8 @@
 }
 
 #description{
-    width:45%;
+    width:fit-content;
+    display: flex;
 }
 
 .team-gallery{
@@ -59,8 +60,8 @@
 
 .image-with-role > img{
  
- width:45%;
- height:45%;
+ width:35%;
+ height:35%;
  
  
    
