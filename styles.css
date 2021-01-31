@@ -7,22 +7,29 @@
 
 .header-row{
     display:flex;
+    border: 2px solid orange;
+    justify-content: space-between;
+    width:fit-content;
+    
+    
 }
 
 .header-column{
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5em;
     width:40%;
+    border: 2px solid cyan;
+    
+}
+.header-column > h1{
+    border: 2px solid purple;
+    width:100%;
+}
+.header-column > p{
+    width: 100%;
+    border: 2px solid yellow;
 }
 
-#left-heading{
-    font-size: 1.5rem;
-    margin-left:10%;
-}
 
-#description{
-    width:fit-content;
-    display: flex;
-}
 
 .team-gallery{
     display: flex;   
@@ -85,3 +92,10 @@ padding-right:0.5rem;
     width:fit-content;
 }
 
+@media (max-width:675px){
+    
+    .header-row{
+        flex-direction:column;
+        
+    }
+}
