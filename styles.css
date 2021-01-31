@@ -1,4 +1,7 @@
 
+body{
+    margin:0;
+}
 .main-container{
     width:1024px;
     border: 2px solid green;
@@ -7,83 +10,80 @@
 
 .header-row{
     display:flex;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     justify-content: space-between;
-    width:fit-content;
+    
     
     
 }
 
-.header-column{
+.header-column{  
     padding: 0.5em;
-    width:40%;
-    border: 2px solid cyan;
+    width:100%;
+    /* border: 2px solid cyan;    */
     
 }
+.heading{
+    width: fit-content;
+}
+.header-column-desc{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:fit-content;
+    /* border: 2px solid purple; */
+  
+}
 .header-column > h1{
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width:100%;
 }
 .header-column > p{
-    width: 100%;
-    border: 2px solid yellow;
+   align-items: right;
+    width: 60%;
+    /* border: 2px solid yellow; */
 }
 
 
 
 .team-gallery{
     display: flex;   
-    /* border:2px solid red; */
-    flex-direction:row;
-    flex-wrap: wrap;
-    width: fit-content;
-    height: fit-content;
-    
+    border:2px solid red;    
+    width:100%;
+    flex-wrap:wrap;
+    justify-content: space-between;
    
 }
 
 .team-image{   
-  /* border:1px solid black; */
-  
-  flex-direction:column; 
-  width:450px;
-  height:fit-content;
-  flex-wrap: wrap;
+  border:1px solid black; 
+  margin-right:2.5em;
+  width:fit-content;
+  padding-top: 1em;
   
 }
 
 .image-with-role{
-    /* grid-template-areas:"img span";
-    display:inline-grid;
-    grid-template-columns:80% 20%;
-    grid-template-rows: 320px;
-     */
-    
-    display:flex;
-    flex-direction: row;
-    
+    display:flex;    
+    border: 2px solid magenta;
+    width:fit-content;
 
 }
 
-.image-with-role > img{
- 
- width:35%;
- height:35%;
- 
- 
-   
+.image-with-role > img{ 
+ width:180px;
    
 }
 
 .image-with-role span{
-/* border: 2px solid blue; */
+border: 2px solid blue;
 justify-content:stretch;
 text-transform: uppercase;
 writing-mode:vertical-lr;
 transform: rotate(0deg);
 transform-origin:top;
-padding-left: 0.5rem;
-padding-right:0.5rem;
+padding-left: 0.25em;
+padding-right:0.25em;
 }
 
 .name{
@@ -92,10 +92,25 @@ padding-right:0.5rem;
     width:fit-content;
 }
 
+footer{
+    text-align: center;
+}
+
 @media (max-width:675px){
     
+    .main-container{
+        width:100%;
+        margin: 0 auto;
+    }
     .header-row{
         flex-direction:column;
         
+    }
+    .header-column{
+       padding:0.5em;
+        width: fit-content;
+    }
+    .header-column-desc{
+        align-items: flex-start;
     }
 }
