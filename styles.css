@@ -56,13 +56,15 @@ body{
 }
 
 .team-image{   
-  border:1px solid black; 
+  /* border:1px solid black;  */
   margin-right:2.5em;
   width:fit-content;
   padding:1em;
   
 }
-
+.top-padding{
+    margin-top:2em;
+}
 .image-with-role{
     display:flex;    
     /* border: 2px solid magenta; */
@@ -117,7 +119,7 @@ footer{
         width:fit-content;
     }
     .team-image{
-        border: 2px solid green;
+        /* border: 2px solid green; */
         padding:0.5em;
     }
     .image-with-role > img{ 
