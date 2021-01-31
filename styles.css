@@ -98,7 +98,7 @@ footer{
     text-align: center;
 }
 
-@media (max-width:420px){
+@media (max-width:675px){
     
     .main-container{
         width:100%;
